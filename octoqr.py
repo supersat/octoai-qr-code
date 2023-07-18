@@ -20,8 +20,8 @@ def transform_qr_code(url, food_type):
     qr.add_data(url)
     qr.make(fit=True)
     qr_code = qr.make_image(
-        fill='black',
-        back_color='white',
+        fill='white',
+        back_color='black',
         image_factory=StyledPilImage,
         module_drawer=RoundedModuleDrawer()
     )
